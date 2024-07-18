@@ -13,6 +13,7 @@ const MultipleChoice = () => {
     const handleOptionChange = (e) => {
       setSelectedOption(e.target.value);
     };
+    
   
     const handleSubmit = () => {
       setIsCorrect(selectedOption === correctAnswer);
