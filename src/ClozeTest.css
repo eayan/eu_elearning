@@ -1,0 +1,37 @@
+/* src/ClozeTest.css */
+.cloze-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .cloze-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    width: 80%;
+  }
+  
+  .cloze-text input {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .cloze-button {
+    align-self: center;
+  }
+  
+  .feedback {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  

@@ -1,0 +1,29 @@
+/* src/MainPage.css */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .main-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .main-page li {
+    margin: 10px 0;
+  }
+  
+  .main-page a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .main-page a:hover {
+    text-decoration: underline;
+  }
+  

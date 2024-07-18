@@ -1,0 +1,45 @@
+/* src/DragDrop.css */
+.drag-drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .drag-drop-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .words-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .draggable-word {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+  }
+  
+  .drop-area {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px dashed #ccc;
+    min-width: 50px;
+    background-color: #fff;
+  }
+  
+  .feedback {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
