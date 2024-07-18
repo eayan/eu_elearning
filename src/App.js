@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './MainPage';
 import ClozeTest from './ClozeTest';
@@ -8,7 +8,7 @@ import DragDrop from './DragDrop';
 import './App.css';
 import './ClozeTest.css';
 import './MultipleChoice.css';
-import './DragDrop.css';
+import './DragDrop.css'; 
 
 const App = () => {
   return (
@@ -25,6 +25,7 @@ const App = () => {
   );
 };
 
+//test
 const ClozeTestActivity = () => {
   return (
     <div className="cloze-test-activity">
