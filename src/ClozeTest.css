@@ -52,12 +52,14 @@
     margin-top: 20px;
   }
 
-  .reset-button {
+  .reset-button,
+  .back-button {
     margin-left: 10px;
     background-color: #ff0000;
   }
   
-  .reset-button:hover {
+  .reset-button:hover,
+  .back-button:hover {
     background-color: #cc0000;
   }
 

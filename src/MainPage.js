@@ -6,7 +6,8 @@ import './MainPage.css';
 const MainPage = () => {
   return (
     <div className="main-page">
-      <h1>Welcome to the Activities Site for E-Learning Platform</h1>
+      <h1>Welcome to Sample Activities Site</h1>
+      <h2>EU E-Learning Platform</h2>
         <break></break>
         <p>This page is only for testing purposes.</p>
       <ul>
@@ -17,10 +18,13 @@ const MainPage = () => {
           <Link to="/multiple-choice">Multiple Choice Activity</Link>
         </li>
         <li>
-          <Link to="/drag-drop">Drag and Drop Activity</Link>
+          <Link to="/drag-drop">Drag and Drop Activity (Text-based)</Link>
+        </li>
+        <li>
+          <Link to="/drag-drop">Drag and Drop Activity (Image-based)</Link>
         </li>
       </ul>
-      <p>*Created by Erdal Ayan, E-Learning Technician.</p>
+      <p>*Created by E. Ayan, E-Learning Technician.</p>
     </div>
   );
 };

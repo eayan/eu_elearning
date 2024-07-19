@@ -1,8 +1,10 @@
 // src/DragDrop.js
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './DragDrop.css';
 
 const DragDrop = () => {
+  const navigate = useNavigate();
   const initialWords = useMemo(() => [
     { id: 1, word: 'dolor', correct: false },
     { id: 8, word: 'delectus', correct: false },
@@ -96,6 +98,7 @@ const DragDrop = () => {
         <button className="reset-button" onClick={handleReset}>
           Reset
         </button>
+        <button className="back-button" onClick={() => navigate('/')}>Back to Main Page</button>
       </div>
       {checked && (
         <div className="feedback">

@@ -1,8 +1,10 @@
 // src/ClozeTest.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ClozeTest.css';
 
 const ClozeTestActivity = () => {
+  const navigate = useNavigate();
   const defaultText = 'Lorem ipsum {0} sit amet. Sit fugit {1} est debitis dicta ex {2} dolorum qui cumque eveniet sed sint nesciunt sit voluptatem optio aut vitae sint. Ex {3} alias non impedit galisum non labore exercitationem vel accusantium aliquam. Aut unde sunt qui {4} doloribus sit internos temporibus et dolores error qui sapiente odit. Vel libero quod nam omnis aliquid aut harum neque. Ut {5} modi aut velit accusantium aut temporibus quae sed facilis dolor nam quas {6} et numquam sint. Ut veritatis aspernatur sed magnam fugiat qui tempore autem aut quae fugit a ratione iusto! Sed delectus autem aut quam sapiente et cumque eveniet! Aut mollitia consequatur et officia delectus et nihil modi quo quod quae sed laboriosam {7}!';
   const defaultBlanks = ['dolor', 'delectus', 'voluptatem', 'expedita', 'doloribus', 'doloribus', 'delectus', 'sunt'];
 
@@ -53,6 +55,7 @@ const ClozeTestActivity = () => {
       <div className="cloze-buttons">
         <button className="cloze-button" onClick={handleCheckAnswers}>Check Answers</button>
         <button className="cloze-button reset-button" onClick={handleReset}>Reset</button>
+        <button className="back-button" onClick={() => navigate('/')}>Back to Main Page</button>
       </div>
       {checked && (
         <div className="feedback">
