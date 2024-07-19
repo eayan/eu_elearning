@@ -6,8 +6,9 @@ import './MainPage.css';
 const MainPage = () => {
   return (
     <div className="main-page">
-      <h1>Welcome to the E-Learning Platform</h1>
+      <h1>Welcome to the Activities Site for E-Learning Platform</h1>
         <break></break>
+        <p>This page is only for testing purposes.</p>
       <ul>
         <li>
           <Link to="/cloze-test">Cloze Test Activity</Link>
@@ -19,6 +20,7 @@ const MainPage = () => {
           <Link to="/drag-drop">Drag and Drop Activity</Link>
         </li>
       </ul>
+      <p>*Created by Erdal Ayan, E-Learning Technician.</p>
     </div>
   );
 };

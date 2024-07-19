@@ -1,45 +1,73 @@
 /* src/DragDrop.css */
 .drag-drop-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .drag-drop-text {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  
-  .words-container {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .draggable-word {
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: grab;
-  }
-  
-  .drop-area {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 0 5px;
-    border: 1px dashed #ccc;
-    min-width: 50px;
-    background-color: #fff;
-  }
-  
-  .feedback {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #007bff;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: justify;
+}
+
+.target-sentence {
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+.words-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.draggable-word {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drop-area {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  margin-right: 5px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 30px;
+}
+
+.placeholder {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.check-button,
+.reset-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.check-button:hover,
+.reset-button:hover {
+  background-color: #0056b3;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
+}
