@@ -60,8 +60,6 @@ const MultipleChoice = () => {
                   {option}
                 </label>
               ))} 
-              
-
             </div>
           </div>
         ))}
