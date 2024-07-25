@@ -1,6 +1,7 @@
 // src/MultipleChoice.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Expander from './expander';
 import './MultipleChoice.css';
 
 const MultipleChoice = () => {
@@ -42,6 +43,7 @@ const MultipleChoice = () => {
       <div className="multiple-choice-container">
         <h1>Multiple Choice Activity</h1>
         <p>{text}</p>
+        <Expander title="Questions">
         {questions.map((q, index) => (
           <div key={index} className="question-block">
             <p className="question">{q.question}</p>
@@ -57,7 +59,9 @@ const MultipleChoice = () => {
                   />
                   {option}
                 </label>
-              ))}
+              ))} 
+              
+
             </div>
           </div>
         ))}
@@ -80,9 +84,10 @@ const MultipleChoice = () => {
               </p>
             ))}
           </div>
-        )}
+        )}</Expander>
       </div>
     );
   };
   
   export default MultipleChoice;
+

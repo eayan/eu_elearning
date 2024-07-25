@@ -15,6 +15,9 @@ const MainPage = () => {
           <Link to="/cloze-test">Cloze Test Activity</Link>
         </li>
         <li>
+          <Link to="/cloze-test1">Cloze Test Activity</Link>
+        </li>
+        <li>
           <Link to="/multiple-choice">Multiple Choice Activity</Link>
         </li>
         <li>
