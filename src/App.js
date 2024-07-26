@@ -17,7 +17,7 @@ const App = () => {
       <div className="App">
       <NavBar />
       <div className='content'>
-        <switch>
+        <Switch>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/content" element={<MainPage />} />
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/content/multiple-choice" element={<MultipleChoice />} />
           <Route path="/content/drag-drop" element={<DragDrop />} />
         </Routes>
-        </switch>
+        </Switch>
       </div>
       </div>
     </Router>
